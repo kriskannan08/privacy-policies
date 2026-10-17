@@ -1,968 +1,949 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2775.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | DueBook</title>
+
+    <meta
+        name="description"
+        content="Read the DueBook privacy policy to understand how payment information, notifications, advertising, and currency conversion are handled."
+    >
+
+    <meta name="theme-color" content="#15803d">
+
+    <style>
+        :root {
+            --primary: #15803d;
+            --primary-dark: #166534;
+            --primary-light: #dcfce7;
+            --background: #f8faf9;
+            --surface: #ffffff;
+            --text-primary: #17211b;
+            --text-secondary: #536158;
+            --border: #e2e8e4;
+            --link: #15803d;
+            --shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text-primary);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #166534 0%,
+                #15803d 55%,
+                #22a052 100%
+            );
+            color: #ffffff;
+            padding: 64px 24px 76px;
+        }
+
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .brand-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.17);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .brand-name {
+            font-size: 23px;
+            font-weight: 750;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-tagline {
+            display: block;
+            margin-top: -3px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+            letter-spacing: 0.3px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: #dcfce7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(34px, 6vw, 52px);
+            font-weight: 750;
+            letter-spacing: -1.8px;
+            line-height: 1.15;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 20px 0 0;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .effective-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 26px;
+            padding: 8px 13px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .page-layout {
+            display: grid;
+            grid-template-columns: 230px minmax(0, 1fr);
+            align-items: start;
+            gap: 32px;
+            max-width: 1100px;
+            margin: -28px auto 0;
+            padding: 0 24px 64px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 24px;
+            padding: 22px 18px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .toc-title {
+            margin: 0 0 12px;
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+        }
+
+        .toc ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .toc li + li {
+            margin-top: 5px;
+        }
+
+        .toc a {
+            display: block;
+            padding: 5px 8px;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .toc a:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        .content {
+            min-width: 0;
+            padding: 34px 38px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .intro {
+            margin: 0 0 28px;
+            padding: 18px 20px;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            background: #f0fdf4;
+            color: #28543a;
+        }
+
+        .intro p {
+            margin: 0;
+        }
+
+        .intro p + p {
+            margin-top: 10px;
+        }
+
+        section {
+            padding-top: 26px;
+            margin-top: 26px;
+            border-top: 1px solid var(--border);
+        }
+
+        section:first-of-type {
+            padding-top: 0;
+            margin-top: 0;
+            border-top: none;
+        }
+
+        h2 {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 0 0 14px;
+            font-size: 21px;
+            font-weight: 750;
+            letter-spacing: -0.4px;
+            line-height: 1.4;
+        }
+
+        .section-number {
+            display: inline-flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 9px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 13px;
+            font-weight: 750;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: var(--text-secondary);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 12px 0 18px;
+            padding-left: 23px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            padding-left: 4px;
+            margin-bottom: 7px;
+        }
+
+        li::marker {
+            color: var(--primary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 650;
+        }
+
+        .contact-card {
+            margin-top: 18px;
+            padding: 22px;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            background: #f0fdf4;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+
+        .contact-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            color: var(--primary-dark);
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            padding: 28px 24px 36px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-brand {
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+            font-size: 17px;
+            font-weight: 750;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 820px) {
+            .hero {
+                padding: 44px 22px 62px;
+            }
+
+            .page-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                padding: 0 16px 42px;
+            }
+
+            .toc {
+                position: static;
+                padding: 18px;
+            }
+
+            .toc ol {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 3px 10px;
+            }
+
+            .toc li + li {
+                margin-top: 0;
+            }
+
+            .content {
+                padding: 26px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+
+            .hero {
+                padding: 36px 18px 54px;
+            }
+
+            .brand {
+                margin-bottom: 24px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .page-layout {
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+
+            .toc {
+                padding: 15px 12px;
+            }
+
+            .toc ol {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .section-number {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .hero {
+                padding: 24px 0;
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .hero-description,
+            .eyebrow,
+            .brand-tagline {
+                color: #333333;
+            }
+
+            .page-layout {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+
+            .toc {
+                display: none;
+            }
+
+            .content {
+                padding: 0;
+                border: none;
+                box-shadow: none;
+            }
+
+            footer {
+                padding-bottom: 0;
+            }
+
+            a {
+                color: #000000;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Privacy Policy | DueBook&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta</p>
-<p class="p1"><span class="Apple-converted-space">        </span>name="description"</p>
-<p class="p1"><span class="Apple-converted-space">        </span>content="Read the DueBook privacy policy to understand how payment information, notifications, advertising, and currency conversion are handled."</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="theme-color" content="#15803d"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary: #15803d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary-dark: #166534;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary-light: #dcfce7;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--background: #f8faf9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--surface: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text-primary: #17211b;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text-secondary: #536158;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--border: #e2e8e4;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--link: #15803d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--shadow: 0 8px 30px rgba(15, 23, 42, 0.05);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>html {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scroll-padding-top: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--background);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family:</p>
-<p class="p1"><span class="Apple-converted-space">                </span>-apple-system,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>BlinkMacSystemFont,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"Segoe UI",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Roboto,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Helvetica,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Arial,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.75;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-webkit-font-smoothing: antialiased;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--link);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-wrap: anywhere;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(</p>
-<p class="p1"><span class="Apple-converted-space">                </span>135deg,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>#166534 0%,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>#15803d 55%,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>#22a052 100%</p>
-<p class="p1"><span class="Apple-converted-space">            </span>);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 64px 24px 76px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-inner {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand-icon {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 48px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 48px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.17);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.2);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand-name {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 23px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -0.5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand-tagline {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: -3px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.8);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.3px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.eyebrow {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #dcfce7;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1.8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: clamp(34px, 6vw, 52px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -1.8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.15;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-description {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 650px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: rgba(255, 255, 255, 0.88);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 17px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.effective-date {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 26px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 13px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.25);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.page-layout {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 230px minmax(0, 1fr);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: start;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 32px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: -28px auto 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 24px 64px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 22px 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--surface);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-secondary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc ol {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc li + li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-secondary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.toc a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-dark);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-width: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 34px 38px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--surface);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.intro {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 28px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 18px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0 8px 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #f0fdf4;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #28543a;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.intro p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.intro p + p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 26px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 26px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>section:first-of-type {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 14px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 21px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -0.4px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-number {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 9px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-dark);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 14px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-secondary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>p:last-child {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 12px 0 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 23px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-secondary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 7px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>li::marker {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>strong {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 650;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.contact-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #bbf7d0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #f0fdf4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.contact-card p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.contact-card p:last-child {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.contact-label {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-dark);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 28px 24px 36px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.footer-brand {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-dark);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 17px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 750;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.footer-links {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 820px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 44px 22px 62px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.page-layout {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>gap: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0 16px 42px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>position: static;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc ol {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: repeat(2, minmax(0, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">                </span>gap: 3px 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc li + li {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>margin-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.content {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 26px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 36px 18px 54px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.brand {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero-description {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.page-layout {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding-right: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding-left: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc ol {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.content {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 24px 18px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 19px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.section-number {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>width: 27px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>height: 27px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media print {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 24px 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>color: #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero-description,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.eyebrow,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.brand-tagline {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>color: #333333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.page-layout {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.toc {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.content {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>box-shadow: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding-bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>color: #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-inner"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="brand"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="brand-icon" aria-hidden="true"&gt;D&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="brand-name"&gt;DueBook&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="brand-tagline"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Your payments, organised.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="eyebrow"&gt;Privacy &amp;amp; transparency&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Privacy Policy&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="hero-description"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Your financial information is personal. This policy explains</p>
-<p class="p1"><span class="Apple-converted-space">                </span>how DueBook handles information when you use the app to</p>
-<p class="p1"><span class="Apple-converted-space">                </span>organise payments, manage reminders, and view expenses.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="effective-date"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span aria-hidden="true"&gt;●&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Effective: 17 October 2026</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="page-layout"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="toc" aria-label="Privacy policy contents"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="toc-title"&gt;On this page&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#information"&gt;Information You Enter&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#storage"&gt;Storage of Your Data&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#notifications"&gt;Notifications&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#advertising"&gt;Advertising &amp;amp; AdMob&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#consent"&gt;Consent &amp;amp; Privacy Choices&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#currency"&gt;Currency Conversion&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#sharing"&gt;Data Sharing&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#retention"&gt;Retention &amp;amp; Deletion&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#children"&gt;Children's Privacy&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#security"&gt;Security&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#rights"&gt;Your Privacy Rights&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#changes"&gt;Policy Changes&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;main class="content"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="intro"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Our approach:&lt;/strong&gt; DueBook is designed to</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>manage your payment records on your device rather than</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>through a DueBook-operated account or payment database.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Third-party services, such as advertising and currency</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>conversion providers, may process certain technical</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>information when you use their features. The details</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>are explained below.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="information"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;01&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Information You Enter</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook allows you to record and organise information</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>related to payments, bills, and recurring expenses.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Depending on the features you use, this may include:</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Payment, bill, or service names&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Payment categories&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Payment amounts and currency codes&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Due dates and recurrence schedules&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Reminder preferences&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Optional notes you choose to add&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Payment status and payment dates&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>This information is used to provide the app's payment</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>management, expense summary, and reminder features.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Please avoid entering passwords, bank account</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>credentials, card numbers, or other highly sensitive</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>information into payment names or notes.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="storage"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;02&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Storage of Your Data</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook is designed to store payment records locally</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>on your device using Apple's data storage technologies.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook does not operate its own user-account system</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>or backend database for storing your payment records.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Your payment records and notes are not intentionally</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>transmitted to DueBook-operated servers.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>However, operating-system features such as device</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>backups may store or process app data depending on</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>your device settings and the applicable service</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>provider's policies.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Information processed by third-party services is</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>handled separately, as described in the relevant</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>sections of this policy.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="notifications"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;03&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Notifications</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook can schedule local notifications to remind</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>you about upcoming payments.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Notification timing is based on the due dates and</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>reminder preferences configured in the app. Local</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>notifications are scheduled through Apple's</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>notification system.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>You can allow, disable, or change notification</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>permissions through your device settings.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="advertising"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;04&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Advertising and Google AdMob</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook uses Google AdMob to display advertisements.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Google Mobile Ads SDK and related services may collect</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>or process information to provide advertisements,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>measure performance, prevent fraud, and support</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>advertising operations.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Depending on the configuration, your location,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>applicable permissions, and your privacy choices,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>information processed by these services may include:</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;IP address and general network information&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Device identifiers and advertising identifiers, where available&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Device, operating-system, and app information&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Advertising interactions and diagnostics&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Information used to measure ad performance and prevent fraud&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>The exact information collected depends on the SDK</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>configuration, the advertising services used, and</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>applicable privacy requirements.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook does not intentionally send the payment names,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>bill amounts, personal notes, or payment records you</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>enter into the app to Google AdMob for advertising.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Google and its partners may process information under</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>their own privacy policies and applicable requirements.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>For more information, review</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>href="https://policies.google.com/privacy"</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>target="_blank"</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>rel="noopener noreferrer"</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&gt;Google's Privacy Policy&lt;/a&gt;.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="consent"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;05&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Advertising Consent and Privacy Choices</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook uses Google's User Messaging Platform (UMP)</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>to manage advertising consent where applicable.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Depending on your location and the legal requirements</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>that apply, you may be presented with a consent or</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>privacy message before advertising services are used.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Where required, you can make choices about the</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>processing of information for advertising purposes</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>through the consent interface provided by the app.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Your choices may affect the types of advertisements</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>that can be shown.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Where applicable, privacy choices may also be</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>available through an in-app privacy settings option.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Availability depends on the consent configuration</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>and the requirements that apply to your location.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="currency"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;06&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Currency Conversion</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook may use the Frankfurter service to retrieve</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>exchange-rate information for currency conversion</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>features.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>When a currency-rate request is made, the service</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>provider may receive technical information such as</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>your IP address as part of normal network</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>communication.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Payment records and personal notes are not intended</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>to be sent to the currency-rate service.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>For information about the service, visit</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>href="https://www.frankfurter.dev/"</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>target="_blank"</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>rel="noopener noreferrer"</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&gt;Frankfurter&lt;/a&gt;.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="sharing"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;07&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Data Sharing</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook does not sell your payment records or</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>personal notes.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Information may be processed by third-party service</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>providers when necessary to support features such</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>as advertising and currency-rate retrieval.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Those providers may handle information according</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>to their own privacy policies, service configurations,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>and applicable legal requirements.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="retention"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;08&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Data Retention and Deletion</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Payment records stored locally in DueBook generally</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>remain on your device until you delete them through</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>the app or remove the app and its associated data.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Actual deletion and retention may be affected by</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>operating-system behaviour, device backups, or</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>other device settings.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Information processed independently by third-party</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>providers is subject to their respective retention</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>policies and applicable requirements.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="children"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;09&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Children's Privacy</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook is intended as a payment and expense</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>management tool and is not specifically designed</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>for children.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>The app's intended audience, advertising setup,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>consent messages, and data-processing practices</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>should be appropriate for the regions in which</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>the app is distributed.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>If you believe a child has provided personal</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>information in a way that is inconsistent with</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>applicable requirements, please contact us so</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>we can review the concern.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="security"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;10&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Security</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook is designed to keep payment records on</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>your device rather than maintain a central</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>DueBook payment database.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>You should protect your device using an appropriate</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>passcode, biometric authentication, and other</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>available security features.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>No method of electronic storage or transmission</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>can be guaranteed to be completely secure.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="rights"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;11&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Your Privacy Rights</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Depending on your location and applicable law,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>you may have rights relating to personal information</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>processed by third-party providers. These may</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>include rights to access, correct, delete, restrict,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>or object to certain processing.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>You can manage locally stored payment records</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>through the app's available features and manage</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>device permissions through your device settings.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Where advertising consent or privacy controls are</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>available, you can use those controls to review</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>or change your choices.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Requests concerning information processed directly</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>by a third-party provider may need to be directed</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>to that provider.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="changes"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;12&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Changes to This Policy</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>This privacy policy may be updated when DueBook's</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>features, third-party services, or applicable</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>requirements change.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Updated versions will be published on this page.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>The effective date at the top of the page will be</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>revised when appropriate.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="section-number"&gt;13&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Contact</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>If you have questions about this privacy policy</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>or DueBook's privacy practices, you can contact us</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>using the details below.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="contact-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="contact-label"&gt;Privacy contact&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;strong&gt;Kannan R S&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Email:</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="mailto:kannanrs1989@gmail.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>kannanrs1989@gmail.com</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-brand"&gt;DueBook&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Keep your payments organised.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&amp;copy; 2026 DueBook. All rights reserved.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-links"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#information"&gt;Privacy Policy&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <header class="hero">
+        <div class="hero-inner">
+
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">D</div>
+
+                <div>
+                    <div class="brand-name">DueBook</div>
+                    <span class="brand-tagline">
+                        Your payments, organised.
+                    </span>
+                </div>
+            </div>
+
+            <p class="eyebrow">Privacy &amp; transparency</p>
+
+            <h1>Privacy Policy</h1>
+
+            <p class="hero-description">
+                Your financial information is personal. This policy explains
+                how DueBook handles information when you use the app to
+                organise payments, manage reminders, and view expenses.
+            </p>
+
+            <div class="effective-date">
+                <span aria-hidden="true">●</span>
+                Effective: 17 October 2026
+            </div>
+
+        </div>
+    </header>
+
+    <div class="page-layout">
+
+        <nav class="toc" aria-label="Privacy policy contents">
+            <p class="toc-title">On this page</p>
+
+            <ol>
+                <li><a href="#information">Information You Enter</a></li>
+                <li><a href="#storage">Storage of Your Data</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#advertising">Advertising &amp; AdMob</a></li>
+                <li><a href="#consent">Consent &amp; Privacy Choices</a></li>
+                <li><a href="#currency">Currency Conversion</a></li>
+                <li><a href="#sharing">Data Sharing</a></li>
+                <li><a href="#retention">Retention &amp; Deletion</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#rights">Your Privacy Rights</a></li>
+                <li><a href="#changes">Policy Changes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+
+        <main class="content">
+
+            <div class="intro">
+                <p>
+                    <strong>Our approach:</strong> DueBook is designed to
+                    manage your payment records on your device rather than
+                    through a DueBook-operated account or payment database.
+                </p>
+
+                <p>
+                    Third-party services, such as advertising and currency
+                    conversion providers, may process certain technical
+                    information when you use their features. The details
+                    are explained below.
+                </p>
+            </div>
+
+            <section id="information">
+                <h2>
+                    <span class="section-number">01</span>
+                    Information You Enter
+                </h2>
+
+                <p>
+                    DueBook allows you to record and organise information
+                    related to payments, bills, and recurring expenses.
+                    Depending on the features you use, this may include:
+                </p>
+
+                <ul>
+                    <li>Payment, bill, or service names</li>
+                    <li>Payment categories</li>
+                    <li>Payment amounts and currency codes</li>
+                    <li>Due dates and recurrence schedules</li>
+                    <li>Reminder preferences</li>
+                    <li>Optional notes you choose to add</li>
+                    <li>Payment status and payment dates</li>
+                </ul>
+
+                <p>
+                    This information is used to provide the app's payment
+                    management, expense summary, and reminder features.
+                </p>
+
+                <p>
+                    Please avoid entering passwords, bank account
+                    credentials, card numbers, or other highly sensitive
+                    information into payment names or notes.
+                </p>
+            </section>
+
+            <section id="storage">
+                <h2>
+                    <span class="section-number">02</span>
+                    Storage of Your Data
+                </h2>
+
+                <p>
+                    DueBook is designed to store payment records locally
+                    on your device using Apple's data storage technologies.
+                    DueBook does not operate its own user-account system
+                    or backend database for storing your payment records.
+                </p>
+
+                <p>
+                    Your payment records and notes are not intentionally
+                    transmitted to DueBook-operated servers.
+                </p>
+
+                <p>
+                    However, operating-system features such as device
+                    backups may store or process app data depending on
+                    your device settings and the applicable service
+                    provider's policies.
+                </p>
+
+                <p>
+                    Information processed by third-party services is
+                    handled separately, as described in the relevant
+                    sections of this policy.
+                </p>
+            </section>
+
+            <section id="notifications">
+                <h2>
+                    <span class="section-number">03</span>
+                    Notifications
+                </h2>
+
+                <p>
+                    DueBook can schedule local notifications to remind
+                    you about upcoming payments.
+                </p>
+
+                <p>
+                    Notification timing is based on the due dates and
+                    reminder preferences configured in the app. Local
+                    notifications are scheduled through Apple's
+                    notification system.
+                </p>
+
+                <p>
+                    You can allow, disable, or change notification
+                    permissions through your device settings.
+                </p>
+            </section>
+
+            <section id="advertising">
+                <h2>
+                    <span class="section-number">04</span>
+                    Advertising and Google AdMob
+                </h2>
+
+                <p>
+                    DueBook uses Google AdMob to display advertisements.
+                    Google Mobile Ads SDK and related services may collect
+                    or process information to provide advertisements,
+                    measure performance, prevent fraud, and support
+                    advertising operations.
+                </p>
+
+                <p>
+                    Depending on the configuration, your location,
+                    applicable permissions, and your privacy choices,
+                    information processed by these services may include:
+                </p>
+
+                <ul>
+                    <li>IP address and general network information</li>
+                    <li>Device identifiers and advertising identifiers, where available</li>
+                    <li>Device, operating-system, and app information</li>
+                    <li>Advertising interactions and diagnostics</li>
+                    <li>Information used to measure ad performance and prevent fraud</li>
+                </ul>
+
+                <p>
+                    The exact information collected depends on the SDK
+                    configuration, the advertising services used, and
+                    applicable privacy requirements.
+                </p>
+
+                <p>
+                    DueBook does not intentionally send the payment names,
+                    bill amounts, personal notes, or payment records you
+                    enter into the app to Google AdMob for advertising.
+                </p>
+
+                <p>
+                    Google and its partners may process information under
+                    their own privacy policies and applicable requirements.
+                    For more information, review
+                    <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Google's Privacy Policy</a>.
+                </p>
+            </section>
+
+            <section id="consent">
+                <h2>
+                    <span class="section-number">05</span>
+                    Advertising Consent and Privacy Choices
+                </h2>
+
+                <p>
+                    DueBook uses Google's User Messaging Platform (UMP)
+                    to manage advertising consent where applicable.
+                </p>
+
+                <p>
+                    Depending on your location and the legal requirements
+                    that apply, you may be presented with a consent or
+                    privacy message before advertising services are used.
+                </p>
+
+                <p>
+                    Where required, you can make choices about the
+                    processing of information for advertising purposes
+                    through the consent interface provided by the app.
+                    Your choices may affect the types of advertisements
+                    that can be shown.
+                </p>
+
+                <p>
+                    Where applicable, privacy choices may also be
+                    available through an in-app privacy settings option.
+                    Availability depends on the consent configuration
+                    and the requirements that apply to your location.
+                </p>
+            </section>
+
+            <section id="currency">
+                <h2>
+                    <span class="section-number">06</span>
+                    Currency Conversion
+                </h2>
+
+                <p>
+                    DueBook may use the Frankfurter service to retrieve
+                    exchange-rate information for currency conversion
+                    features.
+                </p>
+
+                <p>
+                    When a currency-rate request is made, the service
+                    provider may receive technical information such as
+                    your IP address as part of normal network
+                    communication.
+                </p>
+
+                <p>
+                    Payment records and personal notes are not intended
+                    to be sent to the currency-rate service.
+                </p>
+
+                <p>
+                    For information about the service, visit
+                    <a
+                        href="https://www.frankfurter.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Frankfurter</a>.
+                </p>
+            </section>
+
+            <section id="sharing">
+                <h2>
+                    <span class="section-number">07</span>
+                    Data Sharing
+                </h2>
+
+                <p>
+                    DueBook does not sell your payment records or
+                    personal notes.
+                </p>
+
+                <p>
+                    Information may be processed by third-party service
+                    providers when necessary to support features such
+                    as advertising and currency-rate retrieval.
+                </p>
+
+                <p>
+                    Those providers may handle information according
+                    to their own privacy policies, service configurations,
+                    and applicable legal requirements.
+                </p>
+            </section>
+
+            <section id="retention">
+                <h2>
+                    <span class="section-number">08</span>
+                    Data Retention and Deletion
+                </h2>
+
+                <p>
+                    Payment records stored locally in DueBook generally
+                    remain on your device until you delete them through
+                    the app or remove the app and its associated data.
+                </p>
+
+                <p>
+                    Actual deletion and retention may be affected by
+                    operating-system behaviour, device backups, or
+                    other device settings.
+                </p>
+
+                <p>
+                    Information processed independently by third-party
+                    providers is subject to their respective retention
+                    policies and applicable requirements.
+                </p>
+            </section>
+
+            <section id="children">
+                <h2>
+                    <span class="section-number">09</span>
+                    Children's Privacy
+                </h2>
+
+                <p>
+                    DueBook is intended as a payment and expense
+                    management tool and is not specifically designed
+                    for children.
+                </p>
+
+                <p>
+                    The app's intended audience, advertising setup,
+                    consent messages, and data-processing practices
+                    should be appropriate for the regions in which
+                    the app is distributed.
+                </p>
+
+                <p>
+                    If you believe a child has provided personal
+                    information in a way that is inconsistent with
+                    applicable requirements, please contact us so
+                    we can review the concern.
+                </p>
+            </section>
+
+            <section id="security">
+                <h2>
+                    <span class="section-number">10</span>
+                    Security
+                </h2>
+
+                <p>
+                    DueBook is designed to keep payment records on
+                    your device rather than maintain a central
+                    DueBook payment database.
+                </p>
+
+                <p>
+                    You should protect your device using an appropriate
+                    passcode, biometric authentication, and other
+                    available security features.
+                </p>
+
+                <p>
+                    No method of electronic storage or transmission
+                    can be guaranteed to be completely secure.
+                </p>
+            </section>
+
+            <section id="rights">
+                <h2>
+                    <span class="section-number">11</span>
+                    Your Privacy Rights
+                </h2>
+
+                <p>
+                    Depending on your location and applicable law,
+                    you may have rights relating to personal information
+                    processed by third-party providers. These may
+                    include rights to access, correct, delete, restrict,
+                    or object to certain processing.
+                </p>
+
+                <p>
+                    You can manage locally stored payment records
+                    through the app's available features and manage
+                    device permissions through your device settings.
+                </p>
+
+                <p>
+                    Where advertising consent or privacy controls are
+                    available, you can use those controls to review
+                    or change your choices.
+                </p>
+
+                <p>
+                    Requests concerning information processed directly
+                    by a third-party provider may need to be directed
+                    to that provider.
+                </p>
+            </section>
+
+            <section id="changes">
+                <h2>
+                    <span class="section-number">12</span>
+                    Changes to This Policy
+                </h2>
+
+                <p>
+                    This privacy policy may be updated when DueBook's
+                    features, third-party services, or applicable
+                    requirements change.
+                </p>
+
+                <p>
+                    Updated versions will be published on this page.
+                    The effective date at the top of the page will be
+                    revised when appropriate.
+                </p>
+            </section>
+
+            <section id="contact">
+                <h2>
+                    <span class="section-number">13</span>
+                    Contact
+                </h2>
+
+                <p>
+                    If you have questions about this privacy policy
+                    or DueBook's privacy practices, you can contact us
+                    using the details below.
+                </p>
+
+                <div class="contact-card">
+                    <p class="contact-label">Privacy contact</p>
+
+                    <p>
+                        <strong>Kannan R S</strong>
+                    </p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:kannanrs1989@gmail.com">
+                            kannanrs1989@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-brand">DueBook</div>
+
+        <p>Keep your payments organised.</p>
+
+        <p>&copy; 2026 DueBook. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#information">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
 </body>
 </html>
