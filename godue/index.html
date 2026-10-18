@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | GoDue</title>
+
+    <meta
+        name="description"
+        content="Read the GoDue privacy policy to understand how payment information, notifications, advertising, and currency conversion are handled."
+    >
+
+    <meta name="theme-color" content="#15803d">
+
+    <style>
+        :root {
+            --primary: #15803d;
+            --primary-dark: #166534;
+            --primary-light: #dcfce7;
+            --background: #f8faf9;
+            --surface: #ffffff;
+            --text-primary: #17211b;
+            --text-secondary: #536158;
+            --border: #e2e8e4;
+            --link: #15803d;
+            --shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 24px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text-primary);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #166534 0%,
+                #15803d 55%,
+                #22a052 100%
+            );
+            color: #ffffff;
+            padding: 64px 24px 76px;
+        }
+
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .brand-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.17);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .brand-name {
+            font-size: 23px;
+            font-weight: 750;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-tagline {
+            display: block;
+            margin-top: -3px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+            letter-spacing: 0.3px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: #dcfce7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(34px, 6vw, 52px);
+            font-weight: 750;
+            letter-spacing: -1.8px;
+            line-height: 1.15;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 20px 0 0;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .effective-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 26px;
+            padding: 8px 13px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .page-layout {
+            display: grid;
+            grid-template-columns: 230px minmax(0, 1fr);
+            align-items: start;
+            gap: 32px;
+            max-width: 1100px;
+            margin: -28px auto 0;
+            padding: 0 24px 64px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 24px;
+            padding: 22px 18px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .toc-title {
+            margin: 0 0 12px;
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+        }
+
+        .toc ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .toc li + li {
+            margin-top: 5px;
+        }
+
+        .toc a {
+            display: block;
+            padding: 5px 8px;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .toc a:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        .content {
+            min-width: 0;
+            padding: 34px 38px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .intro {
+            margin: 0 0 28px;
+            padding: 18px 20px;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            background: #f0fdf4;
+            color: #28543a;
+        }
+
+        .intro p {
+            margin: 0;
+        }
+
+        .intro p + p {
+            margin-top: 10px;
+        }
+
+        section {
+            padding-top: 26px;
+            margin-top: 26px;
+            border-top: 1px solid var(--border);
+        }
+
+        section:first-of-type {
+            padding-top: 0;
+            margin-top: 0;
+            border-top: none;
+        }
+
+        h2 {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 0 0 14px;
+            font-size: 21px;
+            font-weight: 750;
+            letter-spacing: -0.4px;
+            line-height: 1.4;
+        }
+
+        .section-number {
+            display: inline-flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 9px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 13px;
+            font-weight: 750;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: var(--text-secondary);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 12px 0 18px;
+            padding-left: 23px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            padding-left: 4px;
+            margin-bottom: 7px;
+        }
+
+        li::marker {
+            color: var(--primary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 650;
+        }
+
+        .contact-card {
+            margin-top: 18px;
+            padding: 22px;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            background: #f0fdf4;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+
+        .contact-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            color: var(--primary-dark);
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            padding: 28px 24px 36px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-brand {
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+            font-size: 17px;
+            font-weight: 750;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 820px) {
+            .hero {
+                padding: 44px 22px 62px;
+            }
+
+            .page-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                padding: 0 16px 42px;
+            }
+
+            .toc {
+                position: static;
+                padding: 18px;
+            }
+
+            .toc ol {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 3px 10px;
+            }
+
+            .toc li + li {
+                margin-top: 0;
+            }
+
+            .content {
+                padding: 26px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+
+            .hero {
+                padding: 36px 18px 54px;
+            }
+
+            .brand {
+                margin-bottom: 24px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .page-layout {
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+
+            .toc {
+                padding: 15px 12px;
+            }
+
+            .toc ol {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .section-number {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .hero {
+                padding: 24px 0;
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .hero-description,
+            .eyebrow,
+            .brand-tagline {
+                color: #333333;
+            }
+
+            .page-layout {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+
+            .toc {
+                display: none;
+            }
+
+            .content {
+                padding: 0;
+                border: none;
+                box-shadow: none;
+            }
+
+            footer {
+                padding-bottom: 0;
+            }
+
+            a {
+                color: #000000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-inner">
+
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">D</div>
+
+                <div>
+                    <div class="brand-name">GoDue</div>
+                    <span class="brand-tagline">
+                        Your payments, organised.
+                    </span>
+                </div>
+            </div>
+
+            <p class="eyebrow">Privacy &amp; transparency</p>
+
+            <h1>Privacy Policy</h1>
+
+            <p class="hero-description">
+                Your financial information is personal. This policy explains
+                how GoDue handles information when you use the app to
+                organise payments, manage reminders, and view expenses.
+            </p>
+
+            <div class="effective-date">
+                <span aria-hidden="true">●</span>
+                Effective: 18 October 2026
+            </div>
+
+        </div>
+    </header>
+
+    <div class="page-layout">
+
+        <nav class="toc" aria-label="Privacy policy contents">
+            <p class="toc-title">On this page</p>
+
+            <ol>
+                <li><a href="#information">Information You Enter</a></li>
+                <li><a href="#storage">Storage of Your Data</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#advertising">Advertising &amp; AdMob</a></li>
+                <li><a href="#consent">Consent &amp; Privacy Choices</a></li>
+                <li><a href="#currency">Currency Conversion</a></li>
+                <li><a href="#sharing">Data Sharing</a></li>
+                <li><a href="#retention">Retention &amp; Deletion</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#rights">Your Privacy Rights</a></li>
+                <li><a href="#changes">Policy Changes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+
+        <main class="content">
+
+            <div class="intro">
+                <p>
+                    <strong>Our approach:</strong> GoDue is designed to
+                    manage your payment records on your device rather than
+                    through a GoDue-operated account or payment database.
+                </p>
+
+                <p>
+                    Third-party services, such as advertising and currency
+                    conversion providers, may process certain technical
+                    information when you use their features. The details
+                    are explained below.
+                </p>
+            </div>
+
+            <section id="information">
+                <h2>
+                    <span class="section-number">01</span>
+                    Information You Enter
+                </h2>
+
+                <p>
+                    GoDue allows you to record and organise information
+                    related to payments, bills, and recurring expenses.
+                    Depending on the features you use, this may include:
+                </p>
+
+                <ul>
+                    <li>Payment, bill, or service names</li>
+                    <li>Payment categories</li>
+                    <li>Payment amounts and currency codes</li>
+                    <li>Due dates and recurrence schedules</li>
+                    <li>Reminder preferences</li>
+                    <li>Optional notes you choose to add</li>
+                    <li>Payment status and payment dates</li>
+                </ul>
+
+                <p>
+                    This information is used to provide the app's payment
+                    management, expense summary, and reminder features.
+                </p>
+
+                <p>
+                    Please avoid entering passwords, bank account
+                    credentials, card numbers, or other highly sensitive
+                    information into payment names or notes.
+                </p>
+            </section>
+
+            <section id="storage">
+                <h2>
+                    <span class="section-number">02</span>
+                    Storage of Your Data
+                </h2>
+
+                <p>
+                    GoDue is designed to store payment records locally
+                    on your device using Apple's data storage technologies.
+                    GoDue does not operate its own user-account system
+                    or backend database for storing your payment records.
+                </p>
+
+                <p>
+                    Your payment records and notes are not intentionally
+                    transmitted to GoDue-operated servers.
+                </p>
+
+                <p>
+                    However, operating-system features such as device
+                    backups may store or process app data depending on
+                    your device settings and the applicable service
+                    provider's policies.
+                </p>
+
+                <p>
+                    Information processed by third-party services is
+                    handled separately, as described in the relevant
+                    sections of this policy.
+                </p>
+            </section>
+
+            <section id="notifications">
+                <h2>
+                    <span class="section-number">03</span>
+                    Notifications
+                </h2>
+
+                <p>
+                    GoDue can schedule local notifications to remind
+                    you about upcoming payments.
+                </p>
+
+                <p>
+                    Notification timing is based on the due dates and
+                    reminder preferences configured in the app. Local
+                    notifications are scheduled through Apple's
+                    notification system.
+                </p>
+
+                <p>
+                    You can allow, disable, or change notification
+                    permissions through your device settings.
+                </p>
+            </section>
+
+            <section id="advertising">
+                <h2>
+                    <span class="section-number">04</span>
+                    Advertising and Google AdMob
+                </h2>
+
+                <p>
+                    GoDue uses Google AdMob to display advertisements.
+                    Google Mobile Ads SDK and related services may collect
+                    or process information to provide advertisements,
+                    measure performance, prevent fraud, and support
+                    advertising operations.
+                </p>
+
+                <p>
+                    Depending on the configuration, your location,
+                    applicable permissions, and your privacy choices,
+                    information processed by these services may include:
+                </p>
+
+                <ul>
+                    <li>IP address and general network information</li>
+                    <li>Device identifiers and advertising identifiers, where available</li>
+                    <li>Device, operating-system, and app information</li>
+                    <li>Advertising interactions and diagnostics</li>
+                    <li>Information used to measure ad performance and prevent fraud</li>
+                </ul>
+
+                <p>
+                    The exact information collected depends on the SDK
+                    configuration, the advertising services used, and
+                    applicable privacy requirements.
+                </p>
+
+                <p>
+                    GoDue does not intentionally send the payment names,
+                    bill amounts, personal notes, or payment records you
+                    enter into the app to Google AdMob for advertising.
+                </p>
+
+                <p>
+                    Google and its partners may process information under
+                    their own privacy policies and applicable requirements.
+                    For more information, review
+                    <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Google's Privacy Policy</a>.
+                </p>
+            </section>
+
+            <section id="consent">
+                <h2>
+                    <span class="section-number">05</span>
+                    Advertising Consent and Privacy Choices
+                </h2>
+
+                <p>
+                    GoDue uses Google's User Messaging Platform (UMP)
+                    to manage advertising consent where applicable.
+                </p>
+
+                <p>
+                    Depending on your location and the legal requirements
+                    that apply, you may be presented with a consent or
+                    privacy message before advertising services are used.
+                </p>
+
+                <p>
+                    Where required, you can make choices about the
+                    processing of information for advertising purposes
+                    through the consent interface provided by the app.
+                    Your choices may affect the types of advertisements
+                    that can be shown.
+                </p>
+
+                <p>
+                    GoDue currently uses Google's User Messaging Platform
+                    (UMP) for advertising consent where applicable. This
+                    consent flow is separate from Apple's App Tracking
+                    Transparency (ATT) permission. GoDue does not currently
+                    request tracking permission through Apple's ATT prompt.
+                    Advertising behaviour and the information processed by
+                    advertising services may vary according to your location,
+                    consent choices, SDK configuration, and applicable
+                    requirements.
+                </p>
+
+                <p>
+                    If advertising privacy options are available in the app,
+                    you can use them to review or change your choices.
+                    The options shown depend on the consent configuration
+                    and requirements that apply to your location.
+                </p>
+            </section>
+
+            <section id="currency">
+                <h2>
+                    <span class="section-number">06</span>
+                    Currency Conversion
+                </h2>
+
+                <p>
+                    GoDue may use the Frankfurter service to retrieve
+                    exchange-rate information for currency conversion
+                    features.
+                </p>
+
+                <p>
+                    When a currency-rate request is made, the service
+                    provider may receive technical information such as
+                    your IP address as part of normal network
+                    communication.
+                </p>
+
+                <p>
+                    Payment records and personal notes are not intended
+                    to be sent to the currency-rate service.
+                </p>
+
+                <p>
+                    For information about the service, visit
+                    <a
+                        href="https://www.frankfurter.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Frankfurter</a>.
+                </p>
+            </section>
+
+            <section id="sharing">
+                <h2>
+                    <span class="section-number">07</span>
+                    Data Sharing
+                </h2>
+
+                <p>
+                    GoDue does not sell your payment records or
+                    personal notes.
+                </p>
+
+                <p>
+                    Information may be processed by third-party service
+                    providers when necessary to support features such
+                    as advertising and currency-rate retrieval.
+                </p>
+
+                <p>
+                    Those providers may handle information according
+                    to their own privacy policies, service configurations,
+                    and applicable legal requirements.
+                </p>
+            </section>
+
+            <section id="retention">
+                <h2>
+                    <span class="section-number">08</span>
+                    Data Retention and Deletion
+                </h2>
+
+                <p>
+                    Payment records stored locally in GoDue generally
+                    remain on your device until you delete them through
+                    the app or remove the app and its associated data.
+                </p>
+
+                <p>
+                    Actual deletion and retention may be affected by
+                    operating-system behaviour, device backups, or
+                    other device settings.
+                </p>
+
+                <p>
+                    Information processed independently by third-party
+                    providers is subject to their respective retention
+                    policies and applicable requirements.
+                </p>
+            </section>
+
+            <section id="children">
+                <h2>
+                    <span class="section-number">09</span>
+                    Children's Privacy
+                </h2>
+
+                <p>
+                    GoDue is intended as a payment and expense
+                    management tool and is not specifically designed
+                    for children.
+                </p>
+
+                <p>
+                    The app's intended audience, advertising setup,
+                    consent messages, and data-processing practices
+                    should be appropriate for the regions in which
+                    the app is distributed.
+                </p>
+
+                <p>
+                    If you believe a child has provided personal
+                    information in a way that is inconsistent with
+                    applicable requirements, please contact us so
+                    we can review the concern.
+                </p>
+            </section>
+
+            <section id="security">
+                <h2>
+                    <span class="section-number">10</span>
+                    Security
+                </h2>
+
+                <p>
+                    GoDue is designed to keep payment records on
+                    your device rather than maintain a central
+                    GoDue payment database.
+                </p>
+
+                <p>
+                    You should protect your device using an appropriate
+                    passcode, biometric authentication, and other
+                    available security features.
+                </p>
+
+                <p>
+                    No method of electronic storage or transmission
+                    can be guaranteed to be completely secure.
+                </p>
+            </section>
+
+            <section id="rights">
+                <h2>
+                    <span class="section-number">11</span>
+                    Your Privacy Rights
+                </h2>
+
+                <p>
+                    Depending on your location and applicable law,
+                    you may have rights relating to personal information
+                    processed by third-party providers. These may
+                    include rights to access, correct, delete, restrict,
+                    or object to certain processing.
+                </p>
+
+                <p>
+                    You can manage locally stored payment records
+                    through the app's available features and manage
+                    device permissions through your device settings.
+                </p>
+
+                <p>
+                    Where advertising consent or privacy controls are
+                    available, you can use those controls to review
+                    or change your choices.
+                </p>
+
+                <p>
+                    Requests concerning information processed directly
+                    by a third-party provider may need to be directed
+                    to that provider.
+                </p>
+            </section>
+
+            <section id="changes">
+                <h2>
+                    <span class="section-number">12</span>
+                    Changes to This Policy
+                </h2>
+
+                <p>
+                    This privacy policy may be updated when GoDue's
+                    features, third-party services, or applicable
+                    requirements change.
+                </p>
+
+                <p>
+                    Updated versions will be published on this page.
+                    The effective date at the top of the page will be
+                    revised when appropriate.
+                </p>
+            </section>
+
+            <section id="contact">
+                <h2>
+                    <span class="section-number">13</span>
+                    Contact
+                </h2>
+
+                <p>
+                    If you have questions about this privacy policy
+                    or GoDue's privacy practices, you can contact us
+                    using the details below.
+                </p>
+
+                <div class="contact-card">
+                    <p class="contact-label">Privacy contact</p>
+
+                    <p>
+                        <strong>Kannan R S</strong>
+                    </p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:kannanrs1989@gmail.com">
+                            kannanrs1989@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-brand">GoDue</div>
+
+        <p>Keep your payments organised.</p>
+
+        <p>&copy; 2026 GoDue. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#information">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
